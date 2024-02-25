@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi registration form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <section id="etape1">
+        <div class="registration">
+            <h1>Which topics you are interested in?</h1>
+
+            <form method="POST">
+                <div class="name">
+                    <label for="inputName">Name</label>
+                    <input type="text" placeholder="enter your name" required="required" id="inputName">
+                </div>
+                
+                <div class="mail">
+                    <label for="mail">Email</label>
+                    <input type="email" placeholder="example@gmail.com" required="required" id="mail">
+                </div>
+            </form>
+
+            <div class="submit">
+                <input type="submit" value="Continue" class="continueStep2">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="etape2">
+        <div class="registration">
+            <h1>Which topics you are interested in?</h1>
+
+            <form action="">
+                <div class="topic">
+                    <input type="checkbox" id="check_1" name="check_1" value="check_1">
+                    <label for="check_1">Software Development</label>
+                </div>
+
+                <div class="topic">
+                    <input type="checkbox" id="check_2" name="check_2" value="check_2">
+                    <label for="check_2">User Experience</label>
+                </div>
+
+                <div class="topic">
+                    <input type="checkbox" id="check_3" name="check_3" value="check_3">
+                    <label for="check_3">Graphic Design</label>
+                </div>     
+            </form>
+
+            <div class="submit">
+                <input type="submit" value="Continue" class="continueStep3">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="etape3">
+        <div class="registration">
+            <h1>Summary</h1>
+
+            <div class="resume">
+                <div class="nameMail">
+                    <p>Name: <span class="inputNameValue"></span></p>
+                    <p>Email: <span class="mailValue"> {#mail}</span></p>
+                </div>
+
+                <div class="topics">
+                    <p>Topics</p>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Confirm">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="step">
+        <div class="stepNumber">
+            <p>step <span id="stepCount">1</span> of 3</p>
+        </div>
+        
+        <div class="points">
+            <span class="active"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+        </div>
+
+    </section>
+</body>
+</html>
