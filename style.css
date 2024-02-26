@@ -24,8 +24,8 @@ body {
 
     #etape1 {
         display: flex;
-        height: 65vh;
-        width: 35%;
+        height: 55vh;
+        width: 30%;
 
         background-color: #212936;
 
@@ -82,6 +82,12 @@ body {
                 border: 2px solid #4D5562;
 
                 color: #A1A1A9;
+                outline: none;
+            }
+            input[type="text"]:focus, input[type="email"]:focus {
+                border: 2px solid #652CD1;
+                background-color: transparent;
+                padding-left: 10px;
             }
             input::placeholder {
                 color: #4D5562;
@@ -116,8 +122,8 @@ body {
 
     #etape2 {
         display: none;
-        height: 65vh;
-        width: 35%;
+        height: 55vh;
+        width: 30%;
         
         background-color: #212936;
         
@@ -210,8 +216,8 @@ body {
 
     #etape3 {
         display: none;
-        height: 65vh;
-        width: 35%;
+        height: 55vh;
+        width: 30%;
         
         background-color: #212936;
         
@@ -241,24 +247,37 @@ body {
                 justify-content: center;
                 align-items: start;
             
-                gap: 20px;
+                gap: 30px;
                 width: 100%;
             
-                margin: 40px 0 40px 0;
+                margin: 20px 0 20px 0;
             }
                 .nameMail {
                     display: flex;
                     flex-direction: column;
 
-                    color: #E5E7EB; 
+                    color: #A1A1A9; 
                 }
+                    .summary {
+                        padding: 5px 0;
+                    }
+                        .inputNameValue, .mailValue {
+                            color: #E5E7EB;
+                        }
 
                 .topics {
                     display: flex;
                     flex-direction: column;
 
-                    color: #E5E7EB;
+                    color: #A1A1A9;
                 }
+                    ul {
+                        padding: 10px 0 10px 20px;
+                        color: #E5E7EB;
+                    }
+                        li {
+                            padding: 5px 0;
+                        }
 
             .submit {
                 display: flex;
@@ -287,14 +306,16 @@ body {
 
     #step {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
 
         height: 5vh;
         width: 35%;
+
+        padding-left: 250px;
     }
         .stepNumber {
-            width: 30%;
+            width: 20%;
 
             font-size: 12px;
             color: #4D5562;
@@ -311,20 +332,30 @@ body {
             justify-content: space-around;
             align-items: center;
         }
-            span {
-                width: 7px;
-                height: 7px;
+            .point1, .point2, .point3 {
+                width: 10px;
+                height: 10px;
 
                 background-color: #212936;
 
                 border-radius: 10px;
             }
+            
             .active {
-                width: 7px;
-                height: 7px;
+                width: 10px;
+                height: 10px;
 
                 background-color: #652CD1;
 
                 border-radius: 10px;
                 border: 5px solid #212936; 
+            }
+            .valid {
+                width: 10px;
+                height: 10px;
+
+                background-color: #652CD1;
+
+                border-radius: 10px;
+                border: none; 
             }
