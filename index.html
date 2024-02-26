@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multi registration form</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 
     <script src="script.js" defer></script>
 
@@ -16,18 +18,19 @@
 
 
 </head>
+
 <body>
 
     <section id="etape1">
         <div class="registration">
-            <h1>Which topics you are interested in?</h1>
+            <h1>Registration</h1>
 
             <form method="POST">
                 <div class="name">
                     <label for="inputName">Name</label>
                     <input type="text" placeholder="enter your name" required="required" id="inputName">
                 </div>
-                
+
                 <div class="mail">
                     <label for="mail">Email</label>
                     <input type="email" placeholder="example@gmail.com" required="required" id="mail">
@@ -37,7 +40,7 @@
             <div class="submit">
                 <input type="submit" value="Continue" class="continueStep2">
             </div>
-            
+
         </div>
     </section>
 
@@ -59,13 +62,13 @@
                 <div class="topic">
                     <input type="checkbox" id="check_3" name="check_3" value="check_3">
                     <label for="check_3">Graphic Design</label>
-                </div>     
+                </div>
             </form>
 
             <div class="submit">
                 <input type="submit" value="Continue" class="continueStep3">
             </div>
-            
+
         </div>
     </section>
 
@@ -75,21 +78,21 @@
 
             <div class="resume">
                 <div class="nameMail">
-                    <p>Name: <span class="inputNameValue"></span></p>
-                    <p>Email: <span class="mailValue"> {#mail}</span></p>
+                    <p class="summary">Name: <span class="inputNameValue"></span></p>
+                    <p class="summary">Email: <span class="mailValue"></span></p>
                 </div>
 
                 <div class="topics">
-                    <p>Topics</p>
+                    <p>Topics:</p>
                     <ul>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="submit">
-                <input type="submit" value="Confirm">
+                <input type="submit" value="Confirm" class="confirm">
             </div>
-            
+
         </div>
     </section>
 
@@ -97,13 +100,14 @@
         <div class="stepNumber">
             <p>step <span id="stepCount">1</span> of 3</p>
         </div>
-        
+
         <div class="points">
-            <span class="active"></span>
-            <span class="point"></span>
-            <span class="point"></span>
+            <span class="point1 active"></span>
+            <span class="point2"></span>
+            <span class="point3"></span>
         </div>
 
     </section>
 </body>
+
 </html>
